@@ -22,7 +22,9 @@ public class PostModel {
     private String descripcion;
     private String contenido;
     private String fecha_publicacion;
-    //private String autor_id;
 
+    @ManyToOne
+    @JoinColumn(name = "tipo_post_id", nullable = false)
+    private TiposPostModel tipoPost; //
 
 }
