@@ -25,4 +25,9 @@ public class SeccionsModel {
     @JoinColumn(name = "id_detallepost")
     private DetallePostModel detallepost;
 
+    @Lob
+    @Basic(fetch = FetchType.LAZY)
+    @Column( name ="picture", columnDefinition = "longblob")
+    private byte[] picture;
+
 }

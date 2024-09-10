@@ -6,6 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.util.Date;
+
 @Entity
 @Data
 @NoArgsConstructor
@@ -21,7 +23,7 @@ public class PostModel {
     private String titulo;
     private String descripcion;
     private String contenido;
-    private String fecha_publicacion;
+    private Date fecha_publicacion;
 
     @ManyToOne
     @JoinColumn(name = "tipo_post_id")

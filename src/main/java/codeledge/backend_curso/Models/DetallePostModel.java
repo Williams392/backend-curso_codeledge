@@ -25,4 +25,9 @@ public class DetallePostModel {
     @JoinColumn(name = "id_post")
     private PostModel post;
 
+    @Lob
+    @Basic(fetch = FetchType.LAZY)
+    @Column( name ="picture", columnDefinition = "longblob")
+    private byte[] picture;
+
 }
