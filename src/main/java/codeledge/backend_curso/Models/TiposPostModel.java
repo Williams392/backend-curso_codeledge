@@ -11,10 +11,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Table(name = "tiposPost_tb")
 public class TiposPostModel {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id_tipo_post;
 
     private String nombre_tipo;
     private String descripcion;
+
 }

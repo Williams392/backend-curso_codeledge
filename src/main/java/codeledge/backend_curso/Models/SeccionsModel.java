@@ -18,5 +18,11 @@ public class SeccionsModel {
 
     private String nombre;
     private String descripcion;
-    private Integer orden;
+    private String code;
+    private long orden;
+
+    @ManyToOne
+    @JoinColumn(name = "id_detallepost")
+    private DetallePostModel detallepost;
+
 }

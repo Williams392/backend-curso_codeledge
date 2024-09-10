@@ -24,7 +24,7 @@ public class PostModel {
     private String fecha_publicacion;
 
     @ManyToOne
-    @JoinColumn(name = "tipo_post_id", nullable = false)
+    @JoinColumn(name = "tipo_post_id")
     private TiposPostModel tipoPost;
 
 }

@@ -14,7 +14,7 @@ public class DetallePostModel {
     private String url_recurso;
 
     @ManyToOne
-    @JoinColumn(name = "id_post", nullable = false)
+    @JoinColumn(name = "id_post")
     private PostModel post;
 
 }
