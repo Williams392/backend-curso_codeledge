@@ -14,7 +14,7 @@ public class SeccionsModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id_seccion;
+    private long id_seccion;
 
     private String nombre;
     private String descripcion;

@@ -16,7 +16,7 @@ public class PostModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id_post;
+    private long id_post;
 
     private String titulo;
     private String descripcion;
@@ -25,6 +25,6 @@ public class PostModel {
 
     @ManyToOne
     @JoinColumn(name = "tipo_post_id", nullable = false)
-    private TiposPostModel tipoPost; //
+    private TiposPostModel tipoPost;
 
 }
