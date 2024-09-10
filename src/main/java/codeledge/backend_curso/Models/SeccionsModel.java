@@ -30,4 +30,11 @@ public class SeccionsModel {
     @Column( name ="picture", columnDefinition = "longblob")
     private byte[] picture;
 
+    @Lob
+    @Column(name = "contenido_markdown")
+    private String contenidoMarkdown; // Campo para almacenar Markdown
+
 }
+
+
+
