@@ -1,5 +1,6 @@
 package codeledge.backend_curso.Models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -28,6 +29,7 @@ public class DetallePostModel {
     @Lob
     @Basic(fetch = FetchType.LAZY)
     @Column( name ="picture", columnDefinition = "longblob")
+    @JsonIgnore
     private byte[] picture;
 
 }
